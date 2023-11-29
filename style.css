@@ -1,0 +1,148 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.header-menu li {
+  list-style: none;
+  margin-right: 3vw;
+  color: #00887A;
+  text-transform: uppercase;
+  font-size: larger;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #00887A;
+}
+
+a:hover {
+  color: #77A6F7;
+}
+
+a:avtive {
+  color: #FFCCBC;
+}
+
+.about {
+  background-color: #D3E3FC;
+  padding: 3rem;
+  padding-bottom: 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+  gap: 1rem;
+}
+
+.about h1{
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+}
+.about h3{
+  color: #00887A;
+  margin-top: 0rem;
+}
+
+.about img {
+  width: 100%;
+  max-width: fit-content;
+}
+
+.work {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.img-container, .description {
+  min-width: fit-content; /* Set a minimum width for each container */
+  box-sizing: content-box; /* Include padding and border in total width */
+  padding: 1rem;
+}
+
+.img-container {
+  order: 0;
+  flex: 2 1 33%;
+  padding-bottom: 0rem;
+  max-width: 90%;  
+  align-items:center;
+  place-self: center;
+}
+
+.description {
+  order: 1;
+  flex: 1 1 35%;
+}
+
+.description h3{  
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.description p{
+  margin-top: 0rem;
+}
+
+@media (max-width: 60%) {
+  .img-container, .description {
+      flex: 1 1 45%;
+  }
+}
+
+iframe{
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+
+.proimgbox{
+  order: 0;
+  flex: 2 1 33%;  
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 0rem; 
+  max-width: 90%;
+}
+
+.proimgbox img{
+  width:100%;
+  height:auto;
+}
+
+.protxtbox{
+  order: 1;
+  flex: 1 1 35%;
+  padding: 1rem;
+}
+
+@media (max-width: 60%) {
+  .proimgbox, .protxtbox {
+      flex: 1 1 45%;
+  }
+}
+
+.protxtbox h3{  
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+
+.protxtbox p{
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
